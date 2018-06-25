@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c574f78e-5173-4648-9105-649adcfdbca5" name="Default" comment="" />
+    <list default="true" id="c574f78e-5173-4648-9105-649adcfdbca5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/kafka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/elasticsearch/target/" />
@@ -45,8 +48,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neo4j/target/ss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kafka/pom.xml">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -82,15 +90,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="67" selection-start-column="44" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="neo4j-docker-pull.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/neo4j/src/main/resources/neo4j-docker-pull.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -155,11 +154,6 @@
             <path>
               <item name="infrastructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="infrastructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="infrastructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="infrastructure" type="462c0819:PsiDirectoryNode" />
-              <item name="elasticsearch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="infrastructure" type="b2602c69:ProjectViewProjectNode" />
@@ -309,7 +303,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -343,13 +336,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/neo4j/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/elasticsearch/src/main/resources/es-docker-run.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -653,6 +639,9 @@
     <entry file="file://$PROJECT_DIR$/neo4j/target/ss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/kafka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -710,7 +699,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
