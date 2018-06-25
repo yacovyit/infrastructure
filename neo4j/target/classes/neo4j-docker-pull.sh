@@ -1,1 +1,0 @@
-sudo docker pull neo4j
