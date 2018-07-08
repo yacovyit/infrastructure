@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c574f78e-5173-4648-9105-649adcfdbca5" name="Default" comment="create dataimport module for">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataimporter/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataimporter/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataimporter/src/main/java/api/StockApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataimporter/src/main/java/api/StockApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataimporter/src/main/java/datamodel/Quote.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataimporter/src/main/java/datamodel/Quote.java" afterDir="false" />
-    </list>
+    <list default="true" id="c574f78e-5173-4648-9105-649adcfdbca5" name="Default" comment="create dataimport module for" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/elasticsearch/target/" />
@@ -35,8 +30,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dataimporter/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+            <state relative-caret-position="360">
+              <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -567,7 +562,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1096,8 +1090,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataimporter/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+        <state relative-caret-position="360">
+          <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -20,7 +20,7 @@ public class Main {
             try {
                 Optional<Quotes> todayQuotes = stockApi.query(StockApi.TimeSeries.TIME_SERIES_DAILY, company.getSymbole());
                 if (todayQuotes.isPresent())
-                    System.out.println(todayQuotes.get().getQuotes().stream().findFirst().get());
+                    System.out.println(todayQuotes.get().getQuoteMetaData().getSymbole() + "->" + todayQuotes.get().getQuotes().stream().findFirst().get());
                 else
                     System.out.println("*** " + company.getSymbole() + " not found quotes");
             } catch (JsonProcessingException e) {
