@@ -66,4 +66,16 @@ public class Quote {
     public void setLocalDateTime(LocalDateTime localDateTime) {
         this.localDateTime = localDateTime;
     }
+
+    @Override
+    public String toString() {
+        return "Quote{" +
+                "open=" + open +
+                ", high=" + high +
+                ", low=" + low +
+                ", close=" + close +
+                ", volume=" + volume +
+                ", localDateTime=" + localDateTime +
+                '}';
+    }
 }

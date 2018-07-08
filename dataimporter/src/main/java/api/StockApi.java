@@ -7,10 +7,8 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
 import datamodel.*;
 
 public class StockApi {
@@ -40,7 +38,7 @@ public class StockApi {
         this.apikey = apikey;
     }
 
-    public Quotes query(TimeSeries timeSeries, String symbol) throws JsonProcessingException {
+    public Optional<Quotes> query(TimeSeries timeSeries, String symbol) throws JsonProcessingException {
         JsonNode jsonNode = target
                 .path(QUERY)
                 .queryParam(FUNCTION,timeSeries.name())
@@ -50,10 +48,12 @@ public class StockApi {
                 .get(JsonNode.class);
         return parse(jsonNode);
     }
-    public Quotes parse(JsonNode quotesNode) throws JsonProcessingException {
+    private Optional<Quotes> parse(JsonNode quotesNode) throws JsonProcessingException {
         List<Quote> quotes = new ArrayList<>();
 
         JsonNode metaDataNode = ((ObjectNode)quotesNode).remove(META_DATA);
+        if (metaDataNode == null)
+            return Optional.empty();
         QuoteMetaData quoteMetaData = objectMapper.treeToValue(metaDataNode, QuoteMetaData.class);
 
         Iterator<JsonNode> elementsIterator =  quotesNode.elements();
@@ -66,7 +66,7 @@ public class StockApi {
                 quotes.add(quote);
             }
         }
-        return new Quotes(quoteMetaData, quotes);
+        return Optional.of(new Quotes(quoteMetaData, quotes));
     }
 
     public static enum TimeSeries {
